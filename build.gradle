@@ -1,0 +1,16 @@
+apply plugin: 'java'
+apply plugin: 'maven'
+apply plugin: 'eclipse'
+
+repositories {
+    maven {
+       url "http://repos.zeroturnaround.com/nexus/content/repositories/zt-public-releases"
+    }
+    mavenCentral()
+}
+
+dependencies {
+  compile group: 'org.zeroturnaround', name: 'jr-sdk', version: '4.6.2'
+  compile group: 'org.zeroturnaround', name: 'jr-utils', version: '4.6.2'
+  compile group: 'org.zeroturnaround', name: 'jr-javassist', version: '3.14.0-GA'
+}
