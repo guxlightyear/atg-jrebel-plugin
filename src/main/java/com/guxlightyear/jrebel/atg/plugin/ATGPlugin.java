@@ -1,6 +1,8 @@
 package com.guxlightyear.jrebel.atg.plugin;
 
 import org.zeroturnaround.javarebel.ClassResourceSource;
+import org.zeroturnaround.javarebel.Logger;
+import org.zeroturnaround.javarebel.LoggerFactory;
 import org.zeroturnaround.javarebel.Plugin;
 
 /**
@@ -11,13 +13,14 @@ import org.zeroturnaround.javarebel.Plugin;
  */
 public class ATGPlugin implements Plugin {
 
+	private Logger logger = LoggerFactory.getInstance();;
+
 	/**
 	 * Setup the integration. 
 	 */
 	@Override
 	public void preinit() {
-		// TODO Auto-generated method stub
-
+		logger.echo("Starting up ATG plugin");
 	}
 	
 	@Override
